@@ -1,0 +1,3 @@
+terraformVersion: "latest"
+stack:
+  name: my-kubernetes-stack
