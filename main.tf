@@ -1,7 +1,7 @@
 resource "kubernetes_deployment" "test" {
   metadata {
     name      = "test-deployment"
-    namespace = kubernetes_namespace.example.metadata[0].name
+    namespace = "kubernetes_namespace.example"
   }
 
   spec {
