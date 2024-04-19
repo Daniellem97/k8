@@ -27,7 +27,7 @@ resource "kubernetes_deployment" "test-read" {
           name  = "test-read"
           command = ["sleep", "1000"]  // Change command to keep the container running
 
-          readinessProbe {
+          readiness_probe {
             http_get {
               path = "/nonexistent"  // Intentionally failing readiness probe
               port = 80
